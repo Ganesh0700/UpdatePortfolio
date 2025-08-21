@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="full-tailwind.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Ganesh</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        html { scroll-padding-top: 80px; }
+        .corefeaturesection{
+            background-size: 100% 100%;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+        }
+        .ctaSection{
+          background-size: 100% 100%;
+        }
+        .companiesList{
+          animation:10s infinite linear moveCompany;
+        }
+        @keyframes moveCompany {
+          0%{ top:0; }
+          100%{ top:-50%; }
+        }
+    </style>
+</head>
+<body>
+  <div class="overflow-x-hidden relative w-full ">
+    <!--Navbar-->
+   <nav class="bg-deepBlue">
+  <div class="relative w-full max-w-[1080px] mx-auto flex items-center justify-between px-4">
+    <!-- Logo -->
+    
+    <!-- Hamburger for mobile -->
+    <button id="nav-toggle" class="lg:hidden text-white focus:outline-none">
+      <i data-feather="menu"></i>
+    </button>
+    <ul id="nav-menu" class="hidden lg:flex flex-col lg:flex-row absolute lg:static top-20 left-0 w-full lg:w-auto bg-deepBlue lg:bg-transparent z-50 space-y-2 lg:space-y-0 lg:space-x-7 pr-10 ml-auto">
+      <li><a href="#About" class="text-white font-mullish py-4 lg:py-7 hover:text-lightBlue transition-all duration-200 block text-center">About</a></li>
+      <li><a href="#Project" class="text-white font-mullish py-4 lg:py-7 hover:text-lightBlue transition-all duration-200 block text-center">Project</a></li>
+      <li><a href="#Experience" class="text-white font-mullish py-4 lg:py-7 hover:text-lightBlue transition-all duration-200 block text-center">Experience</a></li>
+      <li><a href="#Certification" class="text-white font-mullish py-4 lg:py-7 hover:text-lightBlue transition-all duration-200 block text-center">Certification</a></li>
+      <li><a href="#Skill" class="text-white font-mullish py-4 lg:py-7 hover:text-lightBlue transition-all duration-200 block text-center">Skill</a></li>
+      <li><a href="#FriendCircle" class="text-white font-mullish py-4 lg:py-7 hover:text-lightBlue transition-all duration-200 block text-center">FriendCircle</a></li>
+      <li><a href="#SocialMedia" class="text-white font-mullish py-4 lg:py-7 hover:text-lightBlue transition-all duration-200 block text-center">SocialMedia</a></li>
+      <li><a href="#Support" class="text-white font-mullish py-4 lg:py-7 hover:text-lightBlue transition-all duration-200 block text-center">Support</a></li>
+    </ul>
+  </div>
+</nav>
+
+    
+    <!--Hero Section-->
+    <section class="relative bg-deepBlue py-10">
+      <div class="w-11/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center mx-auto gap-8">
+        <!--left part-->
+        <div class="space-y-8">
+          <div class="font-mullish font-bold text-[40px] leading-[1.2] text-white flex flex-col justify-center gap-8">Hi, I'm Ganesh Bramhane</div>
+          <div class="w-6 h-1 bg-greenLight"></div>
+          <div class="hero-section-left">
+            <div class="hero-section-heading hero-section-sub-heading text-blue-700 text-lg font-bold">
+              I am a <span class="role"></span>
+            </div>
+          </div>
+          <p class="font-mullish text-[18px] leading-7 text-white opacity-70">
+            I’m a software developer and here is my portfolio website. <br>Here you’ll learn about my journey as a software developer.
+          </p>
+          <div class="flex gap-10">
+            <button class="resumebtn bg-lightBlue text-white py-[14px] px-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 h-10 w-32">
+              <a href="./images/Ganesh_Bramhane_MCA(2026).pdf" class="text-center">Resume</a>
+            </button>
+          </div>
+        </div>
+        <!--right part-->
+        <img src="./images/me1.png" alt="Ganesh Bramhane" class="w-full max-w-[250px] h-auto">
+      </div>
+      <!--shape part-->
+      <div class="w-[103%] absolute left-0 right-0">
+        <img src="./images/hero-shape.svg" alt="" class="w-full object-fill">
+      </div>
+    </section>
+    <!--project section - 1-->
+    <section id="Project" class="bg-white py-16">
+  <div class="w-11/12 max-w-[1080px] mx-auto">
+    <h2 class="font-mullish text-center text-2xl font-bold text-deepBlueHead">Projects</h2>
+    <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-8"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project Card Example -->
+      <div class="bg-blue-50 rounded-lg shadow p-6 flex flex-col justify-between hover:shadow-lg transition">
+        <div>
+          <h3 class="font-bold text-xl text-lightBlue mb-2">ExpressNote – Personal Journaling Web App</h3>
+          <p class="text-gray-700 mb-4 text-sm">
+            A full-stack MERN application for managing daily journals and tasks. Features intuitive UI, CRUD operations, and responsive design for productivity and organization.
+          </p>
+        </div>
+        <div class="flex items-center gap-4 mt-2">
+          <a href="https://express-notes-nu.vercel.app/" target="_blank" class="bg-lightBlue text-white px-4 py-2 rounded font-semibold hover:bg-blue-700 transition">Live</a>
+          <a href="https://github.com/Ganesh0700/ExpressNote-Frondend" target="_blank" class="text-lightBlue underline text-sm">Source Code</a>
+        </div>
+      </div>
+      <!-- Add more project cards below as needed -->
+      <div class="bg-blue-50 rounded-lg shadow p-6 flex flex-col justify-between hover:shadow-lg transition">
+        <div>
+          <h3 class="font-bold text-xl text-lightBlue mb-2">Portfolio Website</h3>
+          <p class="text-gray-700 mb-4 text-sm">
+            My personal portfolio built with HTML, Tailwind CSS, and JavaScript. Showcases my skills, projects, and contact information in a responsive layout.
+          </p>
+        </div>
+        <div class="flex items-center gap-4 mt-2">
+          <a href="" target="_blank" class="bg-lightBlue text-white px-4 py-2 rounded font-semibold hover:bg-blue-700 transition">Live</a>
+          <a href="" target="_blank" class="text-lightBlue underline text-sm">Source Code</a>
+        </div>
+      </div>
+      <!-- Example for a third project -->
+      <div class="bg-blue-50 rounded-lg shadow p-6 flex flex-col justify-between hover:shadow-lg transition">
+        <div>
+          <h3 class="font-bold text-xl text-lightBlue mb-2">Weather App</h3>
+          <p class="text-gray-700 mb-4 text-sm">
+            A simple weather application using React and OpenWeatherMap API. Users can search for current weather conditions by city.
+          </p>
+        </div>
+        <div class="flex items-center gap-4 mt-2">
+          <a href="" target="_blank" class="bg-lightBlue text-white px-4 py-2 rounded font-semibold hover:bg-blue-700 transition">Live</a>
+          <a href="" target="_blank" class="text-lightBlue underline text-sm">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Experience Section -->
+<section id="Experience" class="bg-white py-16">
+  <div class="w-11/12 max-w-[1080px] mx-auto">
+    <h2 class="font-mullish text-center text-2xl font-bold text-deepBlueHead">Experience</h2>
+    <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Example Experience Card -->
+      <div class="p-6 bg-gray-100 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-lg text-lightBlue">Intern - Software Developer</h3>
+        <p class="text-gray-700">Humming Byte Technologies Pvt. Ltd</p>
+        <p class="text-gray-500 text-sm">
+          Feb 2025 - Aug 2025</p>
+        <ul class="list-disc ml-5 mt-2 text-gray-700 text-sm">
+          <li>✅Completed a 6-month internship as a Software Developer Intern at Humming Byte Technologies.</li>
+          <li>✅Gained hands-on experience in software development under the guidance of senior Mr. Ramesh Yadav.</li>
+          <li>✅Worked on assignments and projects with focus on learning and applying programming concepts.</li>
+          <li>✅Improved problem-solving, teamwork, and professional communication skills.</li>
+          <li>✅Recognized for being a quick learner, self-motivated, and consistent in performance.</li>
+        </ul>
+      </div>
+      <div class="p-6">
+        <h3 class="font-bold text-lg text-lightBlue flex justify-center text-center">Now I Find JOB/Intenship <br> in Reputead Company</h3>
+       
+          
+        </ul>
+      </div>
+      <!-- Add more experience cards as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Certification Section -->
+<section id="Certification" class="bg-[#f5f8fe] py-16">
+  <div class="w-11/12 max-w-[1080px] mx-auto">
+    <h2 class="font-mullish text-center text-2xl font-bold text-deepBlueHead">Certification</h2>
+    <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Example Certification Card -->
+      <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-lg text-lightBlue">Certified MERN stack</h3>
+        <p class="text-gray-700">CodingSeekho</p>
+        <p class="text-gray-500 text-sm">Issued: August 2025</p>
+        <a href="./images/certificate/MERN.pdf" class="text-blue-600 underline text-sm mt-2 inline-block">View Certificate</a>
+      </div>
+      <!-- Add more certification cards as needed -->
+       <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-lg text-lightBlue">Certified C++</h3>
+        <p class="text-gray-700">CodingSeekho</p>
+        <p class="text-gray-500 text-sm">Issued: March 2025</p>
+        <a href="./images/certificate/Cpp.pdf" class="text-blue-600 underline text-sm mt-2 inline-block">View Certificate</a>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-lg text-lightBlue">Certified Data Structures and Algorithms</h3>
+        <p class="text-gray-700">CodingSeekho</p>
+        <p class="text-gray-500 text-sm">Issued: June 2025</p>
+        <a href="./images/certificate/DSA.pdf" class="text-blue-600 underline text-sm mt-2 inline-block">View Certificate</a>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-lg text-lightBlue">Certified Java Programming</h3>
+        <p class="text-gray-700">CodingSeekho</p>
+        <p class="text-gray-500 text-sm">Issued: March 2025</p>
+        <a href="./images/certificate/JAVA.pdf" class="text-blue-600 underline text-sm mt-2 inline-block">View Certificate</a>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="font-bold text-lg text-lightBlue">Certified Python</h3>
+        <p class="text-gray-700">CodingSeekho</p>
+        <p class="text-gray-500 text-sm">Issued: Feb 2025</p>
+        <a href="./images/certificate/python.pdf" class="text-blue-600 underline text-sm mt-2 inline-block">View Certificate</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- skill section-->
+    <section id="Skill" class="bg-feature-sectio bg-no-repeat bg-cover pb-12 pt-20 -z-10">
+      <div class="w-10/12 max-w-[1080px] mx-auto relative pt-4">
+        <h2 class="font-mullish text-center text-2xl leading-[1.2] text-white font-bold">Skill</h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+      </div>
+      <!--Skill Section-->
+      <div id="skills" class="skills-container flex flex-col md:flex-row gap-8 mt-4">
+        <div class="skill-container-left w-full md:w-1/2">
+          <h2 class="skill-heading">
+            <span class="caps">M</span>e and
+            <br />
+            MyTech Stack
+          </h2>
+          <div class="skill-subHeading">
+            <p class="text-blue-800">
+              Hi Everyone My name is Ganesh Bramhane I am a Full Stack Web Developer and MERN Developer.
+              Currently I am Pursuing in Master of Computer Application
+            </p>
+            <p class="text-blue-700">
+              My technical skill set includes Core Java, C++, C, Object-Oriented Programming (OOP), and Data Structures. I have a solid understanding of core computer science subjects, which helps me write clean, optimized, and scalable code.
+            </p>
+            <p class="text-blue-700">
+              I am passionate about learning new technologies and constantly improving my skills to stay updated with industry trends. Whether it's backend development, frontend design, or debugging complex logic — I love solving real-world problems through code.
+            </p>
+          </div>
+        </div>
+        <div class="skill-container-right w-full md:w-1/2 flex flex-wrap justify-center gap-4">
+          <img src="./images/userAsset/blob vector.png" class="blob-style" alt="" />
+          <img src="./images/stack/HTML.png" alt="HTML" class="skills-logo" />
+          <img src="./images/stack/CSS.png" alt="CSS" class="skills-logo" />
+          <img src="./images/stack/Javascript.svg" alt="Javascript" class="skills-logo" />
+          <img src="./images/stack/React.png" alt="React" class="skills-logo" />
+          <img src="./images/stack/NodeJs.svg" alt="NodeJs" class="skills-logo" />
+          <img src="./images/stack/Next.svg" alt="Next.js" class="skills-logo" />
+          <img src="./images/stack/Redux.svg" alt="Redux" class="skills-logo" />
+          <img src="./images/stack/Tailwind.png" alt="Tailwind" class="skills-logo" />
+          <img src="./images/stack/Bootstrap.svg" alt="Bootstrap" class="skills-logo" />
+          <img src="./images/stack/MaterialUI.svg" alt="Material UI" class="skills-logo" />
+          <img src="./images/stack/Express.png" alt="Express" class="skills-logo" />
+          <img src="./images/stack/Git.svg" alt="Git" class="skills-logo" />
+          <img src="./images/stack/Github.svg" alt="Github" class="skills-logo" />
+          <img src="./images/stack/Graphql.svg" alt="GraphQL" class="skills-logo" />
+          <img src="./images/stack/MongoDB.svg" alt="MongoDB" class="skills-logo" />
+          <img src="./images/stack/Vercel.svg" alt="Vercel" class="skills-logo" />
+          <img src="./images/stack/ChartJs.svg" alt="ChartJs" class="skills-logo" />
+          <img src="./images/stack/Bash.svg" alt="Bash" class="skills-logo" />
+          <img src="./images/stack/Docker.svg" alt="Docker" class="skills-logo" />
+          <img src="./images/stack/K8s.svg" alt="Kubernetes" class="skills-logo" />
+        </div>
+      </div>
+    </section>
+    <!--friend circle-->
+  <section id="Hobbies" class="bg-white py-16 mt-4">
+  <div class="w-11/12 max-w-[1080px] mx-auto">
+    <h2 class="font-mullish text-center text-2xl font-bold text-deepBlueHead">Hobbies & Interests</h2>
+    <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+    <div class="flex flex-wrap justify-center gap-8">
+      <div class="bg-blue-100 p-6 rounded-lg shadow text-center">
+        <span class="text-3xl">🏊‍♂️</span>
+        <div class="mt-2 font-bold">Swimming</div>
+      </div>
+      <div class="bg-blue-100 p-6 rounded-lg shadow text-center">
+        <span class="text-3xl">📚</span>
+        <div class="mt-2 font-bold">Reading</div>
+      </div>
+      <div class="bg-blue-100 p-6 rounded-lg shadow text-center">
+        <span class="text-3xl">✈️</span>
+        <div class="mt-2 font-bold">Travelling</div>
+      </div>
+    </div>
+  </div>
+</section> 
+    <!--socialMedia-->
+<section id="SocialMedia" class="bg-white py-8">
+  <div class="w-11/12 max-w-[1080px] mx-auto text-center">
+    <h2 class="font-mullish text-2xl font-bold text-deepBlueHead mb-4">Social Media</h2>
+    <div class="flex flex-wrap justify-center gap-8 mt-6">
+      <a href="https://www.linkedin.com/in/ganesh-bramhane070/" class="bg-blue-50 rounded-lg shadow flex flex-col items-center justify-center w-36 h-36 transition-transform duration-300 hover:scale-110 hover:shadow-xl">
+        <img src="./images/linkedin-icon.svg" alt="LinkedIn" class="w-12 h-12 mb-2">
+        <span class="font-semibold text-lg mt-2">LinkedIn</span>
+      </a>
+      <a href="https://github.com/Ganesh0700" class="bg-blue-50 rounded-lg shadow flex flex-col items-center justify-center w-36 h-36 transition-transform duration-300 hover:scale-110 hover:shadow-xl">
+        <img src="./images/github-icon.svg" alt="GitHub" class="w-12 h-12 mb-2">
+        <span class="font-semibold text-lg mt-2">GitHub</span>
+      </a>
+      <a href="https://www.instagram.com/ganesh_bramhane07/" class="bg-blue-50 rounded-lg shadow flex flex-col items-center justify-center w-36 h-36 transition-transform duration-300 hover:scale-110 hover:shadow-xl">
+        <img src="./images/instagram-icon.svg" alt="Instagram" class="w-12 h-12 mb-2">
+        <span class="font-semibold text-lg mt-2">Instagram</span>
+      </a>
+      <a href="https://www.facebook.com/" class="bg-blue-50 rounded-lg shadow flex flex-col items-center justify-center w-36 h-36 transition-transform duration-300 hover:scale-110 hover:shadow-xl">
+        <img src="./images/facebook-icon.svg" alt="Facebook" class="w-12 h-12 mb-2">
+        <span class="font-semibold text-lg mt-2">Facebook</span>
+      </a>
+    </div>
+  </div>
+</section>
+    <!--Education-->
+    <section class="bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-[100]">
+      <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-col md:flex-row">
+        <!--left part -->
+        <div class="flex flex-col justify-center w-full md:max-w-[calc(100%-500px)] sm:my-16">
+          <h2 class="font-mullish font-bold text-2xl text-deepBlueHead">Education</h2>
+          <div class="w-6 h-1 bg-greenLight my-4 mb-4"></div>
+          <p class="font-mullish">I'm Trying to Show My Education Journey Here</p>
+          <div class="eduBox">
+            <div class="flex flex-col sm:flex-row gap-6">
+              <!-- 10th -->
+              <div class="hover-box relative w-full max-h-[250px] p-10 py-12 border bg-gradient-to-br from-yellow-200 to-white z-20 rounded-md cursor-pointer shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="flex flex-col justify-between items-start h-full w-full gap-1 z-20">
+                  <h6 class="font-mullish text-gray-700 font-bold leading-5 max-w-[200px]">
+                    <span class="text-black text-[18px]">10th (SSC)</span><br>
+                    Passed 2018 with 83.20%.
+                  </h6>
+                </div>
+              </div>
+              <!-- 12th -->
+              <div class="hover-box relative w-full max-h-[250px] p-10 py-12 border bg-gradient-to-br from-green-200 to-white z-20 rounded-md cursor-pointer shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="flex flex-col justify-between items-start h-full w-full gap-1 z-20">
+                  <h6 class="font-mullish text-gray-700 font-bold leading-5 max-w-[200px]">
+                    <span class="text-black text-[18px]">12th (HSC)</span><br>
+                    Passed 2020 with 69.00%.
+                  </h6>
+                </div>
+              </div>
+              <!-- Graduation -->
+              <div class="hover-box relative w-full max-h-[250px] p-10 py-12 border bg-gradient-to-br from-blue-200 to-white z-20 rounded-md cursor-pointer shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="flex flex-col justify-between items-start h-full w-full gap-1 z-20">
+                  <h6 class="font-mullish text-gray-700 font-bold leading-5 max-w-[200px]">
+                    <span class="text-black text-[18px]">Graduation (BSc IT)</span><br>
+                    Passed 2023 with 77.57%.
+                  </h6>
+                </div>
+              </div>
+              <!-- MCA -->
+              <div class="hover-box relative w-full max-h-[250px] p-10 py-12 border bg-gradient-to-br from-purple-200 to-white z-20 rounded-md cursor-pointer shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 p-6 rounded-md bg-black">
+                <div class="flex flex-col justify-between items-start h-full w-full gap-1 z-20">
+                  <h6 class="font-mullish text-gray-700 font-bold leading-5 max-w-[200px]">
+                    <span class="text-black text-[18px]">MCA</span><br>
+                    Pursuing [2026]...
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonail Section -->
+    <section class="relative">
+      <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
+        <img src="./images/feature-section1-dottedrows.png" alt="" class="absolute w-[200px] top-[8rem] left-[2rem] -z-10">
+        <h2 class="font-mullish font-extrabold text-2xl text-deepBlueHead text-center">Hello, HR's</h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
+        <div class="flex flex-col xl:flex-row max-w-[960px] items-center mx-auto my-20 space-x-0 xl:space-x-[10rem] gap-8">
+          <!--left image -->
+          <img src="./images/ME5.jpg" alt="" height="300px" width="300px" class="rounded-xl shadow-[0_4px_20px_rgba(59,130,246,0.5)] transition-shadow duration-300 hover:shadow-[0_4px_30px_rgba(59,130,246,0.7)]">
+          <!-- right part-->
+          <div class="max-w-[400px] flex flex-col">
+            <img src="./images/quotes.svg" alt="" width="35px" height="40px" class="-mb-2 xl:order-1 ">
+            <p class="font-mullish text-2xl font-extralight xl:order-1">
+              Hello HRs,
+              My name is Ganesh. I'm happy to showcase my skills and knowledge here.
+              This is my portfolio
+              <span class="text-lightBlue">Thank you for your time!</span>
+            </p>
+            <a href="./images/Ganesh_Bramhane_MCA(2026).pdf" class="text-grayText italic underline xl:order-1">Resume</a>
+            <p class="font-mullish font-extrabold text-2xl -order-1 xl:order-1">Ganesh Bramhane</p>
+            <p class="font-mullish font-medium xl:order-1">Master Of Computer Application</p>
+            <img src="./images/fake-company-logo.png" alt="" width="80px" height="40px" class=" xl:order-1">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CTA-->
+    <section class="bg-[url(/images/CTABg.svg)] w-full h-full bg-no-repeat bg-cover relative ctaSection min-h-[510px]">
+      <div class="contactInfo w-11/12 max-w-[1080px] relative flex flex-col md:flex-row items-center mx-auto justify-between space-y-8 md:space-y-0 md:space-x-20 pt-16">
+        <!--left part-->
+        <div class="flex flex-col gap-5 max-w-[600px]">
+          <h2 class="font-mullish font-bold text-2xl text-white">ContactUs</h2>
+          <div class="w-6 h-1 bg-greenLight"></div>
+          <div class="text-white">
+            <div class="mb-2">
+              <span class="font-medium">📞 Mobile:</span> +91 7038110793
+            </div>
+            <div class="mb-2">
+              <span class="font-medium">✉️ Email:</span>
+              <a href="mailto:ganeshbramhane0700@gmail.com" class="text-white hover:underline">
+                ganeshbramhane0700@gmail.com
+              </a>
+            </div>
+            <div>
+              <span class="font-medium">📍Address:</span> AtPost Wagholi, tq-Shevgaon, Dist - AhilyaNagar 414501
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-blue-400 text-white py-6">
+      <div class="max-w-[1080px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+        <!-- Navigation Links -->
+        <ul class="flex flex-wrap justify-center lg:justify-end gap-6">
+          <li><a href="#About" class="hover:text-lightBlue transition">About</a></li>
+          <li><a href="#Project" class="hover:text-lightBlue transition">Project</a></li>
+          <li><a href="#Skill" class="hover:text-lightBlue transition">Skill</a></li>
+          <li><a href="#FriendCircle" class="hover:text-lightBlue transition">FriendCircle</a></li>
+          <li><a href="#SocialMedia" class="hover:text-lightBlue transition">SocialMedia</a></li>
+          <li><a href="#Support" class="hover:text-lightBlue transition">Support</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script>
+    feather.replace()
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "Full Stack Developer",
+        "Web Developer",
+        "UI-UX Designer",
+        "Backend Developer",
+        "Coder",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+  </script>
+  <script>
+      // Responsive Navbar Toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('nav-toggle').onclick = function() {
+          var menu = document.getElementById('nav-menu');
+          menu.classList.toggle('hidden');
+        }
+      });
+    </script>
+</body>
+</html>
